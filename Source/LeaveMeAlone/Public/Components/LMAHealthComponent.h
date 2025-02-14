@@ -21,8 +21,8 @@ public:
 	// Sets default values for this component's properties
 	ULMAHealthComponent();
 
-	UFUNCTION(BlueprintCallable)
-	float GetHealth() { return Health; }
+	UFUNCTION(BlueprintPure)
+	float GetHealth() const { return Health; }
 
 	UFUNCTION(BlueprintCallable)
 	bool IsDead() const;

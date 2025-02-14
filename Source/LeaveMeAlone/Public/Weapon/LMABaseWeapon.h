@@ -43,6 +43,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 	float FireRate = 0.1f;
 
+	FAmmoWeapon GetCurrentAmmoWeapon() const { return CurrentAmmoWeapon; }
+
 
 protected:
 	// Called when the game starts or when spawned

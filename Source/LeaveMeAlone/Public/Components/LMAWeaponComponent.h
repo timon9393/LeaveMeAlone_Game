@@ -22,6 +22,9 @@ public:
 	void Reload();
 	void StopFire();
 
+	UFUNCTION(BlueprintCallable)
+	bool GetCurrentWeaponAmmo(FAmmoWeapon& AmmoWeapon) const;
+
 
 protected:
 	// Called when the game starts
